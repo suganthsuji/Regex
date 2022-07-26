@@ -2,6 +2,7 @@ package com.regex;
 
 public class Registration {
     private String firstName;
+    private String lastName;
     private String number;
     private String email;
     private String address;
@@ -19,7 +20,20 @@ public class Registration {
         else System.out.println("Please Enter a Valid Name");
     }
 
-    //Using getter and setter
+    public String getLastName() {
+        return lastName;
+    }
+
+    //Checking Validation for Last name
+    public void setLastName(String lastName) {
+
+        if(RegexValidation.isLastNameValidate(lastName)){
+            this.lastName = lastName;
+        }
+        else System.out.println("Please Enter a Valid Name");
+    }
+
+//Using getter and setter
 
     public String getNumber() {
         return number;
@@ -45,11 +59,11 @@ public class Registration {
         this.address = address;
     }
 
-    //Into Beautified Formats
     @Override
     public String toString() {
         return "Registration{" +
-                "FirstName='" + firstName + '\'' +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", number='" + number + '\'' +
                 ", email='" + email + '\'' +
                 ", address='" + address + '\'' +

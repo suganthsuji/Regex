@@ -15,5 +15,15 @@ public class RegexValidation {
             return false;
         }
     }
+    //Validation method for Name using Regexz
+    public static boolean isLastNameValidate(String lastName){
 
+        String nameRegex="^[A-Z][a-z]{3,}$";
+        if(Pattern.matches(nameRegex,lastName)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }

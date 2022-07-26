@@ -13,9 +13,14 @@ public class RegexMain {
 
         //Using setter method to set vaues
 
-        System.out.println("Enter ur name");
+        System.out.println("Enter ur First name");
         String firstName=sc.next();
         registration.setFirstName(firstName);
+
+        System.out.println("Enter ur Last name");
+        String lastName=sc.next();
+        registration.setLastName(lastName);
+
 
         System.out.println("Enter ur number");
         String number=sc.next();
