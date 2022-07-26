@@ -21,14 +21,14 @@ public class RegexMain {
         String lastName=sc.next();
         registration.setLastName(lastName);
 
+        System.out.println("Enter ur email");
+        String email=sc.next();
+        registration.setEmail(email);
 
         System.out.println("Enter ur number");
         String number=sc.next();
         registration.setNumber(number);
 
-        System.out.println("Enter ur email");
-        String email=sc.next();
-        registration.setEmail(email);
 
         System.out.println("Enter ur Address");
         String address=sc.next();

@@ -48,9 +48,12 @@ public class Registration {
     }
 
     public void setEmail(String email) {
-        this.email = email;
-    }
+        if(RegexValidation.isEmailValidation(email)){
+            this.email = email;
+        }
+        else System.out.println("Please Enter a Valid Email");
 
+    }
     public String getAddress() {
         return address;
     }

@@ -15,11 +15,22 @@ public class RegexValidation {
             return false;
         }
     }
-    //Validation method for Name using Regexz
+    //Validation method for Name using Regex
     public static boolean isLastNameValidate(String lastName){
 
         String nameRegex="^[A-Z][a-z]{3,}$";
         if(Pattern.matches(nameRegex,lastName)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    //Validation method for Email using Regexz
+    public static boolean isEmailValidation(String email){
+
+        String emailRegex="^[a-z]{3,}([.][a-z]{1,})?[@][a-z]{3,}[.][a-z]{2,}([.][a-z]{2,})?$";
+        if(Pattern.matches(emailRegex,email)){
             return true;
         }
         else{
