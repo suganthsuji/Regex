@@ -40,9 +40,13 @@ public class Registration {
     }
 
     public void setNumber(String number) {
-        this.number = number;
-    }
+        if(RegexValidation.isNumberValidation(number)){
+            this.number = number;
+        }
+        else System.out.println("Please Enter a Valid Number");
 
+
+    }
     public String getEmail() {
         return email;
     }

@@ -37,4 +37,14 @@ public class RegexValidation {
             return false;
         }
     }
+    public static boolean isNumberValidation(String number){
+
+        String numberRegex="^([+][0-9]{2})?[\\s]?[1-9][0-9]{9}$";
+        if(Pattern.matches(numberRegex,number)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
