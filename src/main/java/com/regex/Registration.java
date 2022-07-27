@@ -33,6 +33,17 @@ public class Registration {
         }
         else System.out.println("Please Enter a Valid Name");
     }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        if(RegexValidation.isEmailValidation(email)){
+            this.email = email;
+        }
+        else System.out.println("Please Enter a Valid Email");
+
+    }
 
 //Using getter and setter
 
@@ -48,17 +59,7 @@ public class Registration {
 
 
     }
-    public String getEmail() {
-        return email;
-    }
 
-    public void setEmail(String email) {
-        if(RegexValidation.isEmailValidation(email)){
-            this.email = email;
-        }
-        else System.out.println("Please Enter a Valid Email");
-
-    }
     public String getAddress() {
         return address;
     }

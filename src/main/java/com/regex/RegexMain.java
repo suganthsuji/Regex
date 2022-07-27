@@ -13,6 +13,10 @@ public class RegexMain {
 
         //Using setter method to set values
 
+        System.out.println("Enter ur number");
+        String number=sc.nextLine();
+        registration.setNumber(number);
+
         System.out.println("Enter ur First name");
         String firstName=sc.next();
         registration.setFirstName(firstName);
@@ -24,11 +28,6 @@ public class RegexMain {
         System.out.println("Enter ur email");
         String email=sc.next();
         registration.setEmail(email);
-
-        System.out.println("Enter ur number");
-        String number=sc.next();
-        registration.setNumber(number);
-
 
         System.out.println("Enter ur Address");
         String address=sc.next();
