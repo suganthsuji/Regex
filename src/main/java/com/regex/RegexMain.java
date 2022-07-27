@@ -11,7 +11,7 @@ public class RegexMain {
         Registration registration=new Registration();
         Scanner sc=new Scanner(System.in);
 
-        //Using setter method to set vaues
+        //Using setter method to set values
 
         System.out.println("Enter ur First name");
         String firstName=sc.next();
@@ -33,6 +33,10 @@ public class RegexMain {
         System.out.println("Enter ur Address");
         String address=sc.next();
         registration.setAddress(address);
+
+        System.out.println("Enter ur Password");
+        String password=sc.next();
+        registration.setPassword(password);
 
         //Printing Objects
         System.out.println(registration);

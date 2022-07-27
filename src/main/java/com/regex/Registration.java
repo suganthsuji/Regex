@@ -6,6 +6,7 @@ public class Registration {
     private String number;
     private String email;
     private String address;
+    private String password;
 
     public String getFirstName() {
         return firstName;
@@ -66,6 +67,19 @@ public class Registration {
         this.address = address;
     }
 
+    //using getter and setter for password
+    public String getPassword() {
+        return password;
+    }
+    //checking validation for passord
+    public void setPassword(String password) {
+        if(RegexValidation.isPasswordValidation(password)){
+            this.password = password;
+        }
+        else System.out.println("Please Enter a Valid Password");
+    }
+
+    //Beautify using toString method
     @Override
     public String toString() {
         return "Registration{" +
@@ -74,6 +88,7 @@ public class Registration {
                 ", number='" + number + '\'' +
                 ", email='" + email + '\'' +
                 ", address='" + address + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }

@@ -47,4 +47,14 @@ public class RegexValidation {
             return false;
         }
     }
+    public static boolean isPasswordValidation(String password){
+
+        String passwordRegex="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,10}$";
+        if(Pattern.matches(passwordRegex,password)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
