@@ -15,10 +15,19 @@ public class Registration {
     //Checking validation for String Name
 
     public void setFirstName(String firstName) {
-        if(RegexValidation.isFirstNameValidate(firstName)){
-            this.firstName = firstName;
+
+        try{
+            if(RegexValidation.isFirstNameValidate(firstName)){
+                this.firstName=firstName;
+            }
+            else throw new CustomException("Invalid Name");
+
         }
-        else System.out.println("Please Enter a Valid Name");
+        catch (Exception e){
+            System.out.println(e);
+        }
+
+
     }
 
     public String getLastName() {

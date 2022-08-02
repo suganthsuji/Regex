@@ -29,7 +29,7 @@ public class RegexValidation {
     //Validation method for Email using Regexz
     public static boolean isEmailValidation(String email){
 
-        String emailRegex="^[a-z0-9]{3,}([.][a-z0-9]{1,})?[@][a-z]{3,}[.][a-z]{2,3}([.][a-z]{2})?$";
+        String emailRegex="^[a-z0-9]{3,}([.][a-z0-9]{1,})?[@][a-z0-9]{1,}[.][a-z]{2,3}([.][a-z]{2})?$";
         if(Pattern.matches(emailRegex,email)){
             return true;
         }
